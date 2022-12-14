@@ -72,7 +72,12 @@
         $name = $_GET["name"];
         $mail = $_GET["mail"];
         $age = $_GET["age"];
-        $mailcheck = "@"
+        $mailcheck = "@";
+
+        $numbers = [];
+        $quantity = 15;
+        $min = 1;
+        $max = 100;
     ?>
     <h1>## Snack 1</h1>
     <div class="container1">
@@ -106,7 +111,20 @@
             }
         ?>
     </div>
+    <h1>## Snack 4</h1>
+    <div class="container4">
+        <?php
+            for ($i = 1; $i <= $quantity; $i++) {
+                $number = rand($min, $max);
 
-    
+                if (in_array($number, $numbers) === false) {
+                    $numbers[] = $number;
+                }
+                
+                $stringNumbers = implode(', ', $numbers);
+            }
+        ?>
+        <p style="font-size: 1.5rem;">Numeri casuali: <?php echo $stringNumbers ?></p>
+    </div>
 </body>
 </html>
