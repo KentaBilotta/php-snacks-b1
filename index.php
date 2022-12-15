@@ -14,55 +14,55 @@
         $partite = [
             // partita 1
             [
-                $casa = [
+                "casa" => [
                     "name" => "Olimpia Milano",
                     "points" => "55",
                 ],
-                $ospite = [
+                "ospite" => [
                     "name" => "Cantù",
                     "points" => "60",
                 ],
             ],
             // partita 2
             [
-                $casa = [
+                "casa" => [
                     "name" => "Trieste",
                     "points" => "66",
                 ],
-                $ospite = [
+                "ospite" => [
                     "name" => "Brindisi",
                     "points" => "83",
                 ],
             ],
             // partita 3
             [
-                $casa = [
+                "casa" => [
                     "name" => "Universo Treviso",
                     "points" => "77",
                 ],
-                $ospite = [
+                "ospite" => [
                     "name" => "Verona",
                     "points" => "79",
                 ],
             ],
             // partita 4
             [
-                $casa = [
+                "casa" => [
                     "name" => "Virtus Bologna",
                     "points" => "77",
                 ],
-                $ospite = [
+                "ospite" => [
                     "name" => "Scaffati",
                     "points" => "84",
                 ],
             ],
             // partita 5
             [
-                $casa = [
+                "casa" => [
                     "name" => "VL Pesaro",
                     "points" => "101",
                 ],
-                $ospite = [
+                "ospite" => [
                     "name" => "Varese",
                     "points" => "93",
                 ],
@@ -83,7 +83,7 @@
     <div class="container1">
         <?php 
             for ($i = 0; $i < sizeof($partite); $i++) {
-                echo "Partita $i:  ".$partite[$i][0]["name"]." - ".$partite[$i][1]["name"]." | ".$partite[$i][0]["points"]." - ".$partite[$i][1]["points"]."<br>"; 
+                echo "Partita $i:  ".$partite[$i]["casa"]["name"]." - ".$partite[$i]["ospite"]["name"]." | ".$partite[$i]["casa"]["points"]." - ".$partite[$i]["ospite"]["points"]."<br>";
             }
         ?>
     </div>
