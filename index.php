@@ -91,11 +91,11 @@
     <div class="container2">
         <form action="" method="GET">
             <label for="name">Nome</label>
-            <input type="text" name="name" id="name" placeholder="Nome" value=<?= $name ?>>
+            <input type="text" name="name" id="name" placeholder="Nome" value="<?= $name ?>">
             <label for="mail">Email</label>
-            <input type="text" name="mail" id="mail" placeholder="Email" value=<?= $mail ?>>
+            <input type="text" name="mail" id="mail" placeholder="Email" value="<?= $mail ?>">
             <label for="age">Età</label>
-            <input type="text" name="age" id="age" placeholder="Età" value=<?= $age ?>>
+            <input type="text" name="age" id="age" placeholder="Età" value="<?= $age ?>>"
             <button>Conferma</button>
         </form>
         <h3>Dati inseriti:</h3>
