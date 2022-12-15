@@ -95,7 +95,7 @@
             <label for="mail">Email</label>
             <input type="text" name="mail" id="mail" placeholder="Email" value="<?= $mail ?>">
             <label for="age">Età</label>
-            <input type="text" name="age" id="age" placeholder="Età" value="<?= $age ?>>"
+            <input type="text" name="age" id="age" placeholder="Età" value="<?= $age ?>">
             <button>Conferma</button>
         </form>
         <h3>Dati inseriti:</h3>
